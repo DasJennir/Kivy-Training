@@ -1,0 +1,34 @@
+<MyGridLayout>
+
+    title:title
+    content:content
+    author:author
+    
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+
+        GridLayout:
+            cols:2
+
+            Label:
+                text: "Title"
+            TextInput:
+                id: title
+                multiline:False
+
+            Label:
+                text: "Content"
+            TextInput:
+                id: content
+                multiline:False
+
+            Label:
+                text: "Author"
+            TextInput:
+                id: author
+                multiline:False
+        Button:
+            text: "Submit"
+            font_size: 34
+            on_press: root.press()
